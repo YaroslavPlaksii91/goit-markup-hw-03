@@ -9,6 +9,7 @@
   --footer-bg-color: #2f303a;
   --hero-btn-bg-hover-color: #188ce8;
   --portfolio-border-color: #eeeeee;
+  --header-border-color: #ececec;
 }
 
 body {
@@ -36,7 +37,16 @@ body {
   padding-right: 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* header */
+
+.page-header {
+  border-bottom: 1px solid var(--header-border-color);
+}
 
 .header-content {
   display: flex;
@@ -122,7 +132,6 @@ body {
 /* hero */
 
 .hero {
-  margin-bottom: 94px;
   background-color: var(--footer-bg-color);
   text-align: center;
 }
@@ -165,12 +174,12 @@ body {
 
 /* features */
 
-.features {
-  margin-bottom: 94px;
-}
-
 .features-list {
   display: flex;
+}
+
+.features-list .item {
+  width: 270px;
 }
 
 .features-list .item + .item {
@@ -196,10 +205,6 @@ body {
 }
 
 /* projects */
-
-.projects {
-  margin-bottom: 94px;
-}
 
 .team-title,
 .projects-title {
@@ -227,8 +232,6 @@ body {
 /* team */
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--team-bg-color);
 }
 
@@ -304,13 +307,6 @@ body {
 .footer-address .link:hover,
 .footer-address .link:focus {
   color: var(--accent-color);
-}
-
-/* portfolio */
-
-.portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 /* portfolio filter */
